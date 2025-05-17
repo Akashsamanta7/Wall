@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | WhisperBoard</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Whispering Wall" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+</head>
+<body>
+  <div class="container">
+    <h1>Login to WhisperBoard</h1>
+    <p>Please enter your registered User ID and password to proceed.</p>
+    <form id="loginForm">
+      <input
+        type="text"
+        id="userId"
+        name="userId"
+        placeholder="Enter User ID"
+        required
+        autocomplete="username"
+      />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter Password"
+        required
+        autocomplete="current-password"
+      />
+      <button type="submit">Login</button>
+    </form>
+    <p>Don’t have access? <a href="https://forms.gle/siZz4Conwuw37QLW9" target="_blank">Request Here</a></p>
+    <div id="loginMessage"></div>
+  </div>
+
+  <script src="js/firebase-config.js"></script>
+  <script type="module" src="js/auth.js"></script>
+</body>
+</html>
